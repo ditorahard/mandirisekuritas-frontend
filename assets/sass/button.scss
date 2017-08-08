@@ -1,0 +1,29 @@
+.btn-navbar{	
+    border: none;
+    color: white;
+    padding: 10px 32px !important;
+    margin-left: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius:4px;
+    font-weight: 700;
+}
+
+.btn-navbar--orange{
+	background-color:$color-orange;
+	color:$color-blue !important;
+}
+
+.btn-navbar--blue{
+	background-color:$color-blue;
+	color:$color-orange !important;
+}
+
+.btn-navbar--orange:hover{
+	background-color: darken($color-orange, 4%) !important;
+}
+
+.btn-navbar--blue:hover{
+	background-color: darken($color-blue, 4%) !important;
+}
