@@ -52,6 +52,51 @@
   height: 5rem; }
 
 .profile-name {
-  display: inline-block; }
+  display: inline-block;
+  color: #0F3A72;
+  font-size: 1.5rem; }
+
+.upload-button {
+  display: inline-block;
+  border-radius: 10px;
+  float: right;
+  background: #fff;
+  border: 1px grey solid; }
+
+.emoji-button {
+  display: inline-block;
+  border-radius: 10px;
+  float: left;
+  background: #fff;
+  border: 1px grey solid; }
+
+.post {
+  display: inline-block;
+  float: right;
+  background: #0F3A72;
+  color: #F4CA34;
+  border: 1px grey solid; }
+
+.more-button {
+  float: right;
+  background: #fff;
+  border: 0px;
+  border-radius: 10px; }
+
+.view-conversation-button {
+  float: right;
+  background: #fff;
+  border: 0px;
+  border-radius: 10px; }
+
+.form-box {
+  margin-left: 15%;
+  margin-right: 15%; }
+
+.text-area {
+  border: 0px;
+  display: block;
+  width: initial;
+  height: initial; }
 
 /*# sourceMappingURL=style.css.map */
