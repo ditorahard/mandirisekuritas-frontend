@@ -1,0 +1,81 @@
+//Card
+
+.card {
+
+	max-width:100%;
+	position:relative;
+	display:flex;
+	flex-direction: column;
+	
+	min-height:0;
+	border:none;
+	border-radius:.28571429rem;
+	box-shadow:0 1px 3px 0 #d4d4d5,0 0 0 1px #d4d4d5;	
+}
+
+.card--course{
+	background-size: 100%;
+	padding-top:80%;
+}
+
+.card--streaming{
+	background-size:50%;
+	padding-left:50%;
+}
+
+.card--write{
+	width:50%;
+	background:#fff;
+	margin-bottom:5%;
+
+}
+
+.card--reply{
+	width:50%;
+	background:#fff;
+	margin-bottom:0.7%;
+}
+
+.card--cms{
+	min-height:80vh;
+}
+
+.card__content__info--session{
+	float:right;
+	
+}
+
+.card--session{
+	margin-bottom:10px;
+}
+
+
+
+// .card__image {
+
+// 	min-height:0;
+// 	max-height:100%;
+	
+// }
+
+
+.card__content {
+	flex-grow: 1;
+	border: none;
+	border-top: 1px solid rgba(34,36,38,.1);
+	background: #fff;
+	margin: 0;
+	padding: 1em 1em;
+	box-shadow: none;
+	font-size: 1em;
+	border-radius: 0;
+	display:table;
+}
+
+.card__content__header--session{
+	display:table-cell;
+}
+
+.card__content__course--session{
+	display:inline-block;
+}
