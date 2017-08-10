@@ -69,7 +69,10 @@
 	box-shadow: none;
 	font-size: 1em;
 	border-radius: 0;
-	display:table;
+
+	width:100%;
+
+	
 }
 
 .card__content__header--session{
@@ -77,5 +80,10 @@
 }
 
 .card__content__course--session{
-	display:inline-block;
+	display:table-cell;
+}
+
+.card--session__content{
+	display:table;
+	width:100%;
 }

@@ -37,7 +37,9 @@ $height-card:133%;
 
 
 .subheader{
-	
+	margin-top:20px;
+    margin-bottom:20px;
+    margin-left:60px;
 }
 
 .yellow-subheader{
@@ -62,6 +64,12 @@ $height-card:133%;
     float:left;
     background: #fff;
     border: 1px grey solid;
+}
+
+.button-cms{
+    float:right;
+    display:inline-block;
+    marign-left:10px;
 }
 
 
@@ -105,12 +113,19 @@ $height-card:133%;
 
 .icon__streaming--image{
 	
-	width:10vh;
-	height:10vh;
+	width:100px;
+	height:100px;
 
 }
 
 .icon__streaming{
 	display:table-cell;
 	vertical-align:middle;
+    width:auto;
+}
+
+//Table
+
+.table--noline tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td {
+border-top:0px;
 }

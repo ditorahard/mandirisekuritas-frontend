@@ -200,13 +200,17 @@ body {
   box-shadow: none;
   font-size: 1em;
   border-radius: 0;
-  display: table; }
+  width: 100%; }
 
 .card__content__header--session {
   display: table-cell; }
 
 .card__content__course--session {
-  display: inline-block; }
+  display: table-cell; }
+
+.card--session__content {
+  display: table;
+  width: 100%; }
 
 .profile-pic {
   display: inline-block;
@@ -263,6 +267,11 @@ body {
   display: inline-block;
   align-self: flex-end; }
 
+.subheader {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 60px; }
+
 .yellow-subheader {
   color: #F1B700; }
 
@@ -279,6 +288,11 @@ body {
   float: left;
   background: #fff;
   border: 1px grey solid; }
+
+.button-cms {
+  float: right;
+  display: inline-block;
+  marign-left: 10px; }
 
 .post {
   display: inline-block;
@@ -310,11 +324,15 @@ body {
   height: initial; }
 
 .icon__streaming--image {
-  width: 10vh;
-  height: 10vh; }
+  width: 100px;
+  height: 100px; }
 
 .icon__streaming {
   display: table-cell;
-  vertical-align: middle; }
+  vertical-align: middle;
+  width: auto; }
+
+.table--noline tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td {
+  border-top: 0px; }
 
 /*# sourceMappingURL=style.css.map */
