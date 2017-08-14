@@ -1,9 +1,19 @@
-@import "global.scss";
-@import "button.scss";
-@import "navbar.scss";
-@import "card.scss";
-@import "profile.scss";
-@import "button.scss";
+/* Modules */
+@import "modules/variable.scss";
+
+
+/* Partials */
+
+@import "partial/global.scss";
+@import "partial/button.scss";
+@import "partial/navbar.scss";
+@import "partial/card.scss";
+@import "partial/profile.scss";
+@import "partial/button.scss";
+
+
+/* Vendors */
+
 
 //Size
 $height-card:133%;

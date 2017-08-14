@@ -1,3 +1,5 @@
+/* Modules */
+/* Partials */
 /* Variables
 -------------------------------------------------- */
 /* Colors
@@ -250,6 +252,7 @@ body {
 .btn-navbar--blue:hover {
   background-color: #003365 !important; }
 
+/* Vendors */
 .container-segment {
   margin-top: 10px; }
 
