@@ -252,7 +252,23 @@ body {
 .btn-navbar--blue:hover {
   background-color: #003365 !important; }
 
-/* Vendors */
+.table--noline tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td {
+  border-top: 0px; }
+
+.form-box {
+  margin-left: 15%;
+  margin-right: 15%; }
+
+.text-area {
+  border: 0px;
+  display: block;
+  width: 110%;
+  height: initial;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  resize: none; }
+
+/* Third party */
 .container-segment {
   margin-top: 10px; }
 
@@ -302,7 +318,10 @@ body {
   float: right;
   background: #0F3A72;
   color: #F4CA34;
-  border: 1px grey solid; }
+  border: 1px grey solid;
+  position: absolute;
+  right: 80px;
+  bottom: 40px; }
 
 .more-button {
   float: right;
@@ -316,16 +335,6 @@ body {
   border: 0px;
   border-radius: 10px; }
 
-.form-box {
-  margin-left: 15%;
-  margin-right: 15%; }
-
-.text-area {
-  border: 0px;
-  display: block;
-  width: initial;
-  height: initial; }
-
 .icon__streaming--image {
   width: 100px;
   height: 100px; }
@@ -334,8 +343,5 @@ body {
   display: table-cell;
   vertical-align: middle;
   width: auto; }
-
-.table--noline tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td {
-  border-top: 0px; }
 
 /*# sourceMappingURL=style.css.map */

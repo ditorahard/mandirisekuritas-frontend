@@ -1,5 +1,5 @@
 /* Modules */
-@import "modules/variable.scss";
+@import "modules/base.scss";
 
 
 /* Partials */
@@ -10,18 +10,20 @@
 @import "partial/card.scss";
 @import "partial/profile.scss";
 @import "partial/button.scss";
+@import "partial/table.scss";
+@import "partial/form.scss";
 
 
-/* Vendors */
+/* Third party */
 
 
-//Size
-$height-card:133%;
+
 
 
 
 
 //Content
+
 .container-segment{
 	margin-top:10px;
 }
@@ -90,6 +92,9 @@ $height-card:133%;
     background: #0F3A72;
     color:#F4CA34;
     border: 1px grey solid;
+    position: absolute;
+    right: 80px;
+    bottom: 40px
 }
 
 .more-button{
@@ -106,20 +111,6 @@ $height-card:133%;
     border-radius:10px;
 }
 
-//Textarea
-
-.form-box{
-	margin-left:15%;
-	margin-right:15%;
-}
-
-.text-area{
-	border:0px;
-	display:block;
-	width:initial;
-	height:initial;
-	
-}
 
 .icon__streaming--image{
 	
@@ -134,8 +125,3 @@ $height-card:133%;
     width:auto;
 }
 
-//Table
-
-.table--noline tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td {
-border-top:0px;
-}
