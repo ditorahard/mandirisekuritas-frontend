@@ -1,13 +1,5 @@
-/* Variables
--------------------------------------------------- */
-$image-path: '../img';
 
 
-
-/* Colors
--------------------------------------------------- */
-$color-orange: #F1B700;
-$color-blue: #003D79;
 
 
 /* Sticky footer styles
@@ -36,7 +28,7 @@ body {
 }
 
 .footer:before{
-	content: "";
+  content: "";
     background: url(../img/footer-orange.png);
     /* line-height: 60px; */
     padding-right: 15px;
@@ -52,33 +44,66 @@ body {
 
 
 .footer-left{
-	background:$color-blue;
-	line-height:60px;
-	padding-right:15px;
+  background:$color-blue;
+  line-height:60px;
+  padding-right:15px;
 }
 
 .footer-right{
-	background:url($image-path+'/footer-orange.png');
-	line-height:60px;
-	padding-right:15px;
-	color:#222;
-	font-weight:700;
+  background:url($image-path+'/footer-orange.png');
+  line-height:60px;
+  padding-right:15px;
+  color:#222;
+  font-weight:700;
 }
 
 
+@media(max-width:768px){
+  .footer {
+  
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  background-color: #999999;
+  font-size: 12px;
+  background: $color-blue;
+  color:white;
+  padding:20px 0px;
+  z-index: 2;
+  height: auto;
+}
 
+.footer:before{
+  content: "";
+   height: 0;
+}
+
+
+.footer-left{
+  background:$color-blue;
+  padding-right:15px;
+  line-height: 20px;
+}
+
+.footer-right{
+  background:none;
+  padding-right:15px;
+  color:white;
+  font-weight:700;
+  line-height: 20px;
+}
+}
 
 .footer-left__content--right{
-	float:right;
+  float:none;
 }
 
 .footer-left__content--right a{
-	color:white;
+  color:white;
 }
 
 .footer-left__content--right a:hover{
-	text-decoration:none;
-	color:$color-orange;
+  text-decoration:none;
+  color:$color-orange;
 }
 
 /* Custom page CSS
@@ -97,5 +122,5 @@ body {
 }
 
 .container{
-	max-width:1000px;
+  max-width:1000px;
 }

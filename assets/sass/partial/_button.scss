@@ -1,8 +1,9 @@
-.btn-navbar{	
+/*Global*/
+
+.btn{   
     border: none;
     color: white;
     padding: 10px 32px !important;
-    margin-left: 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -10,20 +11,55 @@
     font-weight: 700;
 }
 
-.btn-navbar--orange{
-	background-color:$color-orange;
-	color:$color-blue !important;
+.btn--orange{
+    background-color:$color-orange;
+    color:white;
 }
 
-.btn-navbar--blue{
-	background-color:$color-blue;
-	color:$color-orange !important;
+.btn--blue{
+    background-color:$color-blue;
+    color:white;
+}
+
+.btn--orange:hover, .btn--orange:active{
+    background-color: darken($color-orange, 4%) !important;
+    color:white;
+}
+
+.btn--blue:hover, .btn--orange:active{
+    background-color: darken($color-blue, 4%) !important;
+    color:white;
+}
+
+
+/*Navbar*/
+
+.btn-navbar{    
+    border: none;
+    color: white;
+    padding: 5px 16px !important;
+    margin-left: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius:10px;
+    font-weight: 700;
+}
+
+.btn-navbar--orange{
+    background:linear-gradient(#fa9803,#D4483A);
+    color:white;
+}
+
+.btn-navbar--red{
+    background:linear-gradient(#FF7061,#D4483A);
+    color:white;
 }
 
 .btn-navbar--orange:hover{
-	background-color: darken($color-orange, 4%) !important;
+    background-color: darken($color-orange, 4%) !important;
 }
 
 .btn-navbar--blue:hover{
-	background-color: darken($color-blue, 4%) !important;
+    background-color: darken($color-blue, 4%) !important;
 }

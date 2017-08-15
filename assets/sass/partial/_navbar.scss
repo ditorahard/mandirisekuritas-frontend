@@ -1,27 +1,32 @@
+.open a{
+    background:transparent !important;
+}
+
 .navbar {
-	margin-bottom: 0;
-	border-radius: 0;
-	background-image: url('#{$image-path}/navbar-border.jpg');
+    margin-bottom: 0;
+    border-radius: 0;
+    background-image: url('#{$image-path}/navbar-border.jpg');
     background-position: bottom center;
     background-repeat: no-repeat;
-	padding-bottom: 10px;
-	background-color:transparent;
-	border:0px;
+    padding-bottom: 10px;
+    background-color:transparent;
+    border:0px;
+    font-size: 12px;
 }
 
 .navbar:before{
-	background-position: bottom center;
+    background-position: bottom center;
     padding-bottom: 10px;
     background: #f8f8f8;
     height: 100%;
     width: 100%;
     display: block;
     z-index: -2;
-    position: absolute;	
+    position: absolute; 
 }
 
 .navbar:after{
-	background-position: bottom center;
+    background-position: bottom center;
     padding-bottom: 10px;
     background-repeat: repeat-x;
     width: 100%;
@@ -35,26 +40,145 @@
 
 
 .navbar-brand{
-	height:auto;
+    height:auto;
 }
 
 .navbar__link{
-	color: $color-blue !important;
-	font-weight:700;
-	padding-top:10px !important;
-	padding-bottom:10px !important;
+    color: $color-blue !important;
+    font-weight:700;
+    padding:5px 15px !important;
+    margin: 0px 0px;
+    border-top:4px solid transparent;
+    border-right:1px solid #c4c4c4;
 }
 
+
+@media(min-width:768px){
 .navbar li{
-	margin-top: (128px/2)-15px;
+    //margin-top: (128px/2)-15px;
 }
+}
+
+
+
 
 .navbar__link:hover{
-	border-bottom:4px #ffc709 solid;
+    border-top:4px #ffc709 solid;
+}
+
+.navbar__link--home
+{
+font-size:18px;
+line-height:34px;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
-	background-color:transparent;
-	border-bottom:4px #ffc709 solid;
+    background-color:transparent;
+}
+
+
+.navbar-dropdown-toggle{
+    color: $color-blue !important;
+    font-weight:700;
+    padding-top:10px !important;
+    padding-bottom:10px !important;
+    text-transform: uppercase;
+}
+
+.navbar-profile-img{
+    margin-top: -10px;
+    margin-right: 10px;
+    float: left;
+    background: url(example.jpg) 50% 50% no-repeat; /* 50% 50% centers image in div */
+    background-size: auto 100%; /* Interchange this value depending on prefering width vs. height */
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+}
+
+.navbar-dropdown-menu{
+    margin-top: 10px !important;
+    padding-top:0px !important;
+    padding-bottom:0px !important;
+    left:15px;
+}
+
+.navbar-dropdown.open{
+    background: transparent;
+}
+
+.navbar-dropdown-list{
+    margin-top: 0px !important;
+    padding:5px 0px;
+}
+
+.navbar-dropdown-list:hover{
+    background:  #f6f6f6;
+}
+
+.navbar-dropdown-list__link.divider{
+    margin:0;
+}
+
+@media(max-width:768px){
+.navbar-toggle{
+    margin-top:21px;
+}
+.navbar-brand img{
+    width:80px;
+}
+.navbar-register{
+    display: none !important;
+}
+.navbar__link{
+    border-right:0px solid;
+}
+}
+
+
+.navbar-register{
+    display: inline-block;
+    width:100%
+}
+
+
+.navbar-register-container{
+    
+}
+
+
+
+.navbar-register{
+    display: table;
+    text-align: center;
+    margin-bottom: 46px;
+}
+
+.navbar-register-col{
+    display: table-cell;
+}
+
+.navbar-register-password{
+    
+    color:#222;
+    padding-left:15px
+}
+
+.navbar-register-password:hover{
+    text-decoration: none;
+    color:darken(#222, 4%) !important;
+}
+
+.navbar-register-bg{
+    background:#c4c4c4;
+    width:100%;
+    padding:5px;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+
+.navbar-register-col--left{
+    width:20%;
+    text-align: left;
 }
 
