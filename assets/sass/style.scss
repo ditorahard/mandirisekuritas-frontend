@@ -1,15 +1,32 @@
+<<<<<<< HEAD
 @import "client/global.scss";
 @import "client/button.scss";
 @import "client/navbar.scss";
+=======
+@import "global.scss";
+@import "button.scss";
+@import "navbar.scss";
+@import "card.scss";
+@import "profile.scss";
+@import "button.scss";
+>>>>>>> f1aa4a13272e844dd798533c4c745f3cc6817a62
 
 //Size
-
 $height-card:133%;
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> f1aa4a13272e844dd798533c4c745f3cc6817a62
 //Content
 .container-segment{
 	margin-top:10px;
+}
+
+.blue-mandiri-font{
+	color:#0F3A72;
 }
 
 .title{
@@ -18,38 +35,106 @@ $height-card:133%;
 }
 
 
-//Card
+.cms-content{
+	height:auto;
+}
 
-.card {
-	padding-top:80%;
-	max-width:100%;
-	position:relative;
-	display:flex;
-	flex-direction: column;
-	background-size: 100%;
-	min-height:0;
-	border:none;
-	border-radius:.28571429rem;
-	box-shadow:0 1px 3px 0 #d4d4d5,0 0 0 1px #d4d4d5;	
+.pagination--cms{
+	display:inline-block;
+    align-self: flex-end;
 }
 
 
-.card__image {
+.subheader{
+	margin-top:20px;
+    margin-bottom:20px;
+    margin-left:60px;
+}
 
-	min-height:0;
-	max-height:100%;
+.yellow-subheader{
+	color:#F1B700;
+}
+
+//Custom Button
+
+
+.upload-button{
+    display:inline-block;
+    border-radius:10px;
+    float:right;
+    background: #fff;
+    border: 1px grey solid;
+
+}
+
+.emoji-button{
+    display:inline-block;
+    border-radius:10px;
+    float:left;
+    background: #fff;
+    border: 1px grey solid;
+}
+
+.button-cms{
+    float:right;
+    display:inline-block;
+    marign-left:10px;
+}
+
+
+.post{
+
+    display:inline-block;
+    float:right;
+    background: #0F3A72;
+    color:#F4CA34;
+    border: 1px grey solid;
+}
+
+.more-button{
+    float:right;
+    background:#fff;
+    border: 0px;
+    border-radius:10px;
+}
+
+.view-conversation-button{
+    float:right;
+    background: #fff;
+    border: 0px;
+    border-radius:10px;
+}
+
+//Textarea
+
+.form-box{
+	margin-left:15%;
+	margin-right:15%;
+}
+
+.text-area{
+	border:0px;
+	display:block;
+	width:initial;
+	height:initial;
 	
 }
 
-.card__content {
-	flex-grow: 1;
-	border: none;
-	border-top: 1px solid rgba(34,36,38,.1);
-	background: #fff;
-	margin: 0;
-	padding: 1em 1em;
-	box-shadow: none;
-	font-size: 1em;
-	border-radius: 0;
+.icon__streaming--image{
+	
+	width:100px;
+	height:100px;
 
+}
+
+.icon__streaming{
+	display:table-cell;
+	vertical-align:middle;
+    width:auto;
+}
+
+//Table
+
+.table--noline tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td {
+border-top:0px;
 }
