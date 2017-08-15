@@ -1,8 +1,7 @@
-.btn-navbar{	
+.btn{	
     border: none;
     color: white;
     padding: 10px 32px !important;
-    margin-left: 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -10,20 +9,22 @@
     font-weight: 700;
 }
 
-.btn-navbar--orange{
+.btn--orange{
 	background-color:$color-orange;
-	color:$color-blue !important;
+	color:white;
 }
 
-.btn-navbar--blue{
+.btn--blue{
 	background-color:$color-blue;
-	color:$color-orange !important;
+	color:white;
 }
 
-.btn-navbar--orange:hover{
+.btn--orange:hover, .btn--orange:active{
 	background-color: darken($color-orange, 4%) !important;
+    color:white;
 }
 
-.btn-navbar--blue:hover{
+.btn--blue:hover, .btn--orange:active{
 	background-color: darken($color-blue, 4%) !important;
+    color:white;
 }

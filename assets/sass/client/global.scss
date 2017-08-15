@@ -66,10 +66,43 @@ body {
 }
 
 
+@media(max-width:768px){
+  .footer {
+  
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  background-color: #999999;
+  font-size: 12px;
+  background: $color-blue;
+  color:white;
+  padding:20px 0px;
+  z-index: 2;
+  height: auto;
+}
 
+.footer:before{
+  content: "";
+   height: 0;
+}
+
+
+.footer-left{
+  background:$color-blue;
+  padding-right:15px;
+  line-height: 20px;
+}
+
+.footer-right{
+  background:none;
+  padding-right:15px;
+  color:white;
+  font-weight:700;
+  line-height: 20px;
+}
+}
 
 .footer-left__content--right{
-	float:right;
+	float:none;
 }
 
 .footer-left__content--right a{

@@ -1,0 +1,31 @@
+
+
+.btn-navbar{    
+    border: none;
+    color: white;
+    padding: 5px 16px !important;
+    margin-left: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius:10px;
+    font-weight: 700;
+}
+
+.btn-navbar--orange{
+    background:linear-gradient(#fa9803,#D4483A);
+    color:white;
+}
+
+.btn-navbar--red{
+    background:linear-gradient(#FF7061,#D4483A);
+    color:white;
+}
+
+.btn-navbar--orange:hover{
+    background-color: darken($color-orange, 4%) !important;
+}
+
+.btn-navbar--blue:hover{
+    background-color: darken($color-blue, 4%) !important;
+}
