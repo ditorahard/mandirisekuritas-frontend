@@ -223,7 +223,8 @@
 /* line 169, ../scss/emojionearea.scss */
 .emojionearea .emojionearea-picker {
   background: #FFFFFF;
-  position: absolute;
+  /*Position modified by Dito*/
+  position: static;
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.32);
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.32);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.32);
@@ -517,7 +518,8 @@
       background-position: right -60px; }
   /* line 510, ../scss/emojionearea.scss */
   .emojionearea .emojionearea-picker.emojionearea-picker-position-bottom {
-    margin-top: 10px;
+    /*Margin top modified by Dito*/
+    margin-top: 30px;
     right: -40px;
     top: 47px; }
     /* line 515, ../scss/emojionearea.scss */
@@ -544,7 +546,7 @@
 /* line 545, ../scss/emojionearea.scss */
 .emojionearea .emojionearea-button.active + .emojionearea-picker-position-bottom {
  /*Modified by Dito */
-  margin-top: 100px; }
+  /*margin-top: 100px;*/ }
 /* line 550, ../scss/emojionearea.scss */
 .emojionearea.emojionearea-standalone {
   display: inline-block;
