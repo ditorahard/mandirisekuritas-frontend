@@ -1,6 +1,10 @@
 /* Modules */
 /*Color*/
 /*image path*/
+body {
+  font-family: "Open Sans","Helvetica Neue",Arial,sans-serif;
+  font-weight: 400; }
+
 /* Partials */
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -318,14 +322,15 @@ body {
   padding-left: 50%; }
 
 .card--write {
-  width: 50%;
+  width: 70%;
   background: #fff;
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+  margin-top: 30px; }
 
 .card--reply {
-  width: 50%;
+  width: 70%;
   background: #fff;
-  margin-bottom: 0.7%; }
+  margin-bottom: 0.8%; }
 
 .card--cms {
   min-height: 80vh; }
@@ -358,18 +363,26 @@ body {
   display: table;
   width: 100%; }
 
+.reply-info {
+  display: inline-block; }
+
+.writer-info {
+  display: inline-block; }
+
 .profile-pic {
   display: inline-block;
-  margin-right: 5%; }
+  margin-right: 20px;
+  margin-top: 20px; }
 
 .profile-pic img {
   width: 5rem;
-  height: 5rem; }
+  height: 5rem;
+  margin-left: 20px; }
 
 .profile-name {
-  display: inline-block;
-  color: #0F3A72;
-  font-size: 1.5rem; }
+  color: #003D79 !important;
+  font-size: 1.5rem;
+  font-weight: 700; }
 
 /*Global*/
 .btn {

@@ -2,16 +2,23 @@
 
 .profile-pic{
 	display: inline-block;
-	margin-right: 5%;	
+	margin-right: 20px;
+	margin-top:20px;	
 }
 
 .profile-pic img{
 	width: 5rem;
 	height: 5rem;
+	margin-left:20px;
 }
 
 .profile-name{
-	display:inline-block;
-	color:#0F3A72;
+	color:#003D79 !important;
 	font-size:1.5rem;
+	font-weight:700;
+}
+
+.profile-name a{
+	
+	
 }
