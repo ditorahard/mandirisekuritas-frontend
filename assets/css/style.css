@@ -131,6 +131,10 @@ body {
   background-color: #003365 !important;
   color: white; }
 
+.btn-content {
+  float: right;
+  margin-right: 10px; }
+
 /*Navbar*/
 .btn-navbar {
   border: none;
@@ -393,6 +397,10 @@ body {
 .btn--blue:hover, .btn--orange:active {
   background-color: #003365 !important;
   color: white; }
+
+.btn-content {
+  float: right;
+  margin-right: 10px; }
 
 /*Navbar*/
 .btn-navbar {
