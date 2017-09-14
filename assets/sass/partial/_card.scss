@@ -11,20 +11,30 @@
 	border:none;
 	border-radius:.28571429rem;
 	box-shadow:0 1px 3px 0 #d4d4d5,0 0 0 1px #d4d4d5;	
+	background: #fff;
 }
 
 .card--course{
-	background-size: 100%;
+	background-size: contain;
+
 	padding-top:80%;
 }
 
 .card--streaming{
-	background-size:50%;
-	padding-left:50%;
+	width:100%;
 }
 
+
+
+.card--streaming__image img{
+	display:inline-block;
+	width:50%;
+
+}
+
+
 .card--write{
-	width:70%;
+	
 	background:#fff;
 	margin-bottom:5%;
 	margin-top:30px;
@@ -32,24 +42,54 @@
 }
 
 .card--reply{
-	width:70%;
+	
 	background:#fff;
 	margin-bottom:0.8%;
+}
+
+@media (min-width: 992px) {
+	
+	.card--fixed{
+		position:fixed !important;
+	}
+
+	
 }
 
 .card--cms{
 	min-height:80vh;
 }
 
+
+//Ditambahin
+.card__content__info p{
+	font-style:italic;
+	font-size:12px;
+}
+
+//Selesai
+
 .card__content__info--session{
-	float:right;
+	display: inline-block;
+    vertical-align: middle;
+    float: right;
+    margin-top: 10px;
+	margin-right: 20px;
+
 	
 }
 
-.card--session{
-	margin-bottom:10px;
+.card__session{
+	margin-bottom:30px;
 }
 
+.card-polling{
+	background-color:#E1E1E1;
+	width:100%;
+	height:200px;
+	text-align:center;
+	border-radius:10px;
+}
 
 
 // .card__image {
@@ -66,7 +106,7 @@
 	border-top: 1px solid rgba(34,36,38,.1);
 	background: #fff;
 	margin: 0;
-	padding: 1em 1em;
+	padding: 1em 1em 1em 1em;
 	box-shadow: none;
 	font-size: 1em;
 	border-radius: 0;
@@ -79,6 +119,20 @@
 .card__content__header--session{
 	display:table-cell;
 }
+
+//Ditambahin
+.card__content__header{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.card__content__header p{
+color: $color-blue;
+font-weight:700;
+font-size:16px;
+}
+
+//Selesai
 
 .card__content__course--session{
 	display:table-cell;
@@ -95,4 +149,13 @@
 
 .writer-info{
 	display:inline-block;
+}
+
+
+.card-img-left {
+  color: #fff;
+  height:30rem;
+  
+  background: url(../img/abc.jpg) center no-repeat;
+  background-size: cover;
 }

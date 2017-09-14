@@ -76,7 +76,7 @@
           </div><!--/.nav-collapse -->
         		</div>	
             <div class="col-md-2 hidden-xs">
-                             <a class="navbar-brand navbar-right" href="#"><img src="assets/img/logo.png"></a>
+                    <a class="navbar-brand navbar-right" href="#"><img src="assets/img/logo.png"></a>
             </div>
         	</div> 
 
@@ -87,6 +87,8 @@
 <section class="forum">
 		
 		<div class="container">
+
+		<div class="col-lg-10 col-centered">
 			<div class="card card--write">
 				<div class="card__content">
 					<div class="profile-pic">
@@ -116,7 +118,7 @@
 					<div class="form-box">
 						<div class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cumque commodi quaerat vel iste nulla esse, quis est dignissimos? Veniam assumenda quibusdam esse, expedita voluptate deleniti repellendus culpa tempore suscipit!</div>
 					</div>
-					<button class="view-conversation-button"><i class="fa fa-comment-o" aria-hidden="true"></i></button>
+					<button class="view-conversation-button" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat"><i class="fa fa-comment-o" aria-hidden="true"></i></button>
 				</div>
 			</div>
 
@@ -134,11 +136,12 @@
 					
 					<div class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cumque commodi quaerat vel iste nulla esse, quis est dignissimos? Veniam assumenda quibusdam esse, expedita voluptate deleniti repellendus culpa tempore suscipit!</div>
 					</div>
-					<button class="view-conversation-button"><i class="fa fa-comment-o" aria-hidden="true"></i></button>
+					<button class="view-conversation-button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="fa fa-comment-o" aria-hidden="true"></i></button>
 				</div>
 
 			</div>
 		</div>
+	</div>
 
 	</section>
 
@@ -147,6 +150,7 @@
   <div class="row">
     <div class="col-sm-6 ">
      	
+
 		
 
     </div>
@@ -180,6 +184,113 @@
     </div>
 </footer>
 	
+	<!-- Modal -->
+
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+		  <div class="container--table">	
+		      <div class="container--table-cell" style="overflow:hidden;">
+		        <div class="card card--reply card--reply--modal">
+				<div class="card__content">
+					<div class="profile-pic">
+						<a href="#"><img class="img-circle" src="assets/img/abc.jpg" alt=""></a>
+					</div>
+					<div class="reply-info"><a class="profile-name" href="#">Dimas Ramadhani</a>
+						<div class="post-date"><small>14 Aug 17, 14:23</small></div>
+					</div>
+					<button class="more-button"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+					<div class="form-box">
+						<div class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cumque commodi quaerat vel iste nulla esse, quis est dignissimos? Veniam assumenda quibusdam esse, expedita voluptate deleniti repellendus culpa tempore suscipit!</div>
+					</div>
+					<button class="view-conversation-button" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat"><i class="fa fa-comment-o" aria-hidden="true"></i></button>
+				</div>
+				</div>
+		      </div>
+
+				<div class="container--table-cell reply-container" style="height:700px; overflow: auto !important;">	
+					<div class="card card--reply">
+						<div class="card__content">
+							<div class="profile-pic">
+								<a href="#"><img class="img-circle" src="assets/img/abc.jpg" alt=""></a>
+							</div>
+							<div class="reply-info"><a class="profile-name" href="#">Dimas Ramadhani</a>
+								<div class="post-date"><small>14 Aug 17, 14:23</small></div>
+							</div>
+							<button class="more-button"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+							<div class="form-box">
+								<div class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cumque commodi quaerat vel iste nulla esse, quis est dignissimos? Veniam assumenda quibusdam esse, expedita voluptate deleniti repellendus culpa tempore suscipit!</div>
+							</div>
+							<button class="view-conversation-button" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat"><i class="fa fa-comment-o" aria-hidden="true"></i></button>
+						</div>
+						</div>
+						<div class="card card--reply">
+						<div class="card__content">
+							<div class="profile-pic">
+								<a href="#"><img class="img-circle" src="assets/img/abc.jpg" alt=""></a>
+							</div>
+							<div class="reply-info"><a class="profile-name" href="#">Dimas Ramadhani</a>
+								<div class="post-date"><small>14 Aug 17, 14:23</small></div>
+							</div>
+							<button class="more-button"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+							<div class="form-box">
+								<div class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cumque commodi quaerat vel iste nulla esse, quis est dignissimos? Veniam assumenda quibusdam esse, expedita voluptate deleniti repellendus culpa tempore suscipit!</div>
+							</div>
+							<button class="view-conversation-button" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat"><i class="fa fa-comment-o" aria-hidden="true"></i></button>
+						</div>
+						</div>
+						<div class="card card--reply">
+						<div class="card__content">
+							<div class="profile-pic">
+								<a href="#"><img class="img-circle" src="assets/img/abc.jpg" alt=""></a>
+							</div>
+							<div class="reply-info"><a class="profile-name" href="#">Dimas Ramadhani</a>
+								<div class="post-date"><small>14 Aug 17, 14:23</small></div>
+							</div>
+							<button class="more-button"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+							<div class="form-box">
+								<div class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cumque commodi quaerat vel iste nulla esse, quis est dignissimos? Veniam assumenda quibusdam esse, expedita voluptate deleniti repellendus culpa tempore suscipit!</div>
+							</div>
+							<button class="view-conversation-button" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat"><i class="fa fa-comment-o" aria-hidden="true"></i></button>
+						</div>
+						</div>
+						<div class="card card--reply">
+						<div class="card__content">
+							<div class="profile-pic">
+								<a href="#"><img class="img-circle" src="assets/img/abc.jpg" alt=""></a>
+							</div>
+							<div class="reply-info"><a class="profile-name" href="#">Dimas Ramadhani</a>
+								<div class="post-date"><small>14 Aug 17, 14:23</small></div>
+							</div>
+							<button class="more-button"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+							<div class="form-box">
+								<div class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cumque commodi quaerat vel iste nulla esse, quis est dignissimos? Veniam assumenda quibusdam esse, expedita voluptate deleniti repellendus culpa tempore suscipit!</div>
+							</div>
+							<button class="view-conversation-button" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat"><i class="fa fa-comment-o" aria-hidden="true"></i></button>
+						</div>
+						</div>
+						<div class="card card--write">
+						<div class="card__content">
+							<div class="profile-pic">
+								<a href="#"><img class="img-circle" src="assets/img/abc.jpg" alt=""></a>
+							</div>
+							<div class="writer-info">
+								<a class="profile-name" href="#">dmasramdhani</a>
+							</div>
+							<button class="upload-button btn-sm"><i class="fa fa-plus fa-2" aria-hidden="true"></i></button>
+							<div class="form-box">
+								<textarea class="text-area" placeholder="Write Here..."></textarea>
+								<!-- <button class="emoji-button btn-sm"><i class="fa fa-smile-o fa-2" aria-hidden="true"></i></button> -->
+								<button class="post btn-sm">POST</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+		      </div>
+		   
+		</div>
+		
+
 	<!-- Javascript -->
 
 
@@ -216,6 +327,15 @@
 				// from a single Node
 		autosize(document.querySelector('.emojionearea-editor'));
 	</script>
+	<script>$('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})</script>
 
 </body>
 </html>
