@@ -13,6 +13,144 @@
 	margin-top:30px;
 }
 
+//Tambahan
 .container-hero{
 	margin-top:30px;
+}
+
+.panel-registration{
+	margin-top:30px;
+	padding:35px;
+	border-radius:10px;
+}
+
+.container-segment--registration{
+	margin-top:50px !important;
+}
+
+.content-login{
+width: 100%;
+    height: auto;
+    position: relative;
+    padding: 10px 0px;
+    background: url(../img/img2.png) repeat-x scroll 0% 0% transparent;
+ }
+
+.content-login:before{
+content: " ";
+    background: url(../img/sosmed-cont-shadow2.png) no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 44px;
+    top: 10px;
+    z-index: 100;
+    background-position: center -38px;
+}
+ #wrapper-overlay {
+    position: absolute;
+    width: 100%;
+    height: 90.5%;
+    background-color: rgba(0, 42, 90, 0.86);
+}
+
+#wrapper-overlay:before {
+    content: "";
+    background: url(../img/login-back-logo.png) no-repeat;
+    width: 100%;
+    height: 479px;
+    position: absolute;
+    background-position: center;
+    top: 0px;
+}
+
+#login-cont h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#login-cont {
+    width: 250px;
+    height: auto;
+    float: none;
+    margin: 153px auto;
+    z-index: 100;
+    position: relative;
+}
+
+#login-cont .input-group {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin-bottom: 17px;
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+#login-cont .input-group-addon {
+    background-color: #f4ae06;
+    color: #b78308;
+    border: none;
+    font-size: 17px;
+    border-radius: 2px 0px 0px 2px;
+}
+
+#login-cont .form-control {
+    background-color: #6e839f;
+    color: #fff;
+    font-size: 13px;
+    border: none;
+    height: 30px;
+    font-size: 12px;
+    height: 30px;
+}
+
+.input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    color: #555555;
+    text-align: center;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child), .input-group .form-control:not(:first-child):not(:last-child) {
+    border-radius: 0;
+}
+.input-group-addon, .input-group-btn {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.input-group-addon, .input-group-btn, .input-group .form-control {
+    display: table-cell;
+}
+
+.input-group .form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.login-white-top{
+background-color: #fff;
+    padding-top: 10px;
+min-height:40px;
+}
+
+.login-white-bottom{
+	background: #fff;
+    min-height: 90px;
 }

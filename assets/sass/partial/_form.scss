@@ -15,3 +15,85 @@
 	resize:none;
 	
 }
+
+
+//Tambahan
+.registration-header{
+	margin-left:13px;
+	margin-top:45px;
+	color: $color-blue;
+	font-weight:700;
+	margin-bottom:20px;
+}
+
+.label-registration{
+	margin-top:10px;
+	margin-left:13px;
+	font-weight:400;
+	font-size:16px;
+	color:#656565;
+}
+
+.form-register-fullwidth{
+	
+	margin-bottom:20px;
+}
+
+.registration-info{
+	margin-left:10px;
+color:#656565;
+margin-bottom:30px;
+
+}
+
+.registration-sign-in{
+	font-size:16px;
+	margin-left:13px;
+}
+
+.form-group--small{
+	margin-top:20px;
+	width:100%;
+display:table;
+margin-bottom:10px;
+}
+
+.form-group--small-content{
+
+	display:table-cell;
+}
+
+.form-register-halfwidth{
+	margin-bottom:20px;
+}
+
+.form-small-left{
+padding-right:7%;
+}
+.form-small-right{
+	padding-left:7%;
+}
+
+.label-registration-small{
+	margin-top:20px;
+}
+
+.radio-registration{
+	margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+#login-cont label a {
+    margin-top: 7px;
+    display: inline-block;
+    color: #FDC92A;
+    font-size: 12px;
+}
+
+#PasswordShow{
+	background-color: #6E839F;border-radius: 0px;display: none;
+}
+
+.fa .fa-eye{
+color:#ffffff;
+}

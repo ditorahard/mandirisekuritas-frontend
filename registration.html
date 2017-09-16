@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Mandiri Sekuritas Frontend</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body style="background:#E1E1E1;">
+
+    <!-- Fixed navbar -->
+   <nav class="navbar navbar-default">
+        <div class="container">
+        	<div class="row">
+        		<div class="col-md-10">
+ <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="#"><img src="assets/img/logo.png"></a>
+<div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+           
+          </div>
+
+          <div id="navbar" class="navbar-collapse collapse">
+
+            <div class="navbar-register">
+                <div class="navbar-register-col navbar-register-col--left">
+                  <a href="" class="navbar-register-password">Forgot Password</a>
+                </div>
+               <div class="navbar-register-col navbar-register-col--right">
+                  <div class="navbar-register-bg">
+                          <a href="./" class="btn-navbar btn-navbar--orange">REGISTER</a>
+                          <a href="./" class="btn-navbar btn-navbar--red">LOG IN</a>
+                         
+                  </div>
+              </div>
+       
+            </div>
+
+            <ul class="nav navbar-nav">
+              <li class=""><a href="#" class="navbar__link navbar__link--home"><i class="fa fa-home"></i></a></li>
+              <li class="active"><a href="#" class="navbar__link">COURSE</a></li>
+              <li><a href="#"  class="navbar__link">LIVESTREAMING</a></li>
+              <li><a href="#"  class="navbar__link">FORUM</a></li>
+               <li><a href="#"  class="navbar__link">CHAT</a></li>
+                     <li><a href="./" class="btn-navbar btn-navbar--orange hide">LOG IN</a></li>
+              <li><a href="./" class="btn-navbar btn-navbar--blue hide">REGISTER</a></li>
+              <li class="dropdown navbar-dropdown">
+                    <a class="dropdown-toggle navbar-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <!-- The Profile picture inserted via div class below, with shaping provided by Bootstrap -->
+                        <div class="navbar-profile-img" style="background-image:url('assets/img/profile.jpg')"></div>
+                        CHELSEA ISLAN <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu navbar-dropdown-menu">
+                        <li class="navbar-dropdown-list">
+                            <a  class="navbar-dropdown-list__link" href="#">Edit Profile</a>
+                        </li>
+                        <li role="separator" class="divider navbar-dropdown-list__link"></li>
+                        <li class="navbar-dropdown-list">
+                            <a class="navbar-dropdown-list_link" href="#">Log out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+           
+          </div><!--/.nav-collapse -->
+        		</div>	
+            <div class="col-md-2 hidden-xs">
+                             <a class="navbar-brand navbar-right" href="#"><img src="assets/img/logo.png"></a>
+            </div>
+        	</div> 
+
+        </div><!--/.container-fluid -->
+      </nav>
+
+
+<div class="container container-segment">
+  <div class="row">
+    <div class="col-md-8 col-centered">
+
+    <div class="panel panel-default panel-registration">
+    <div class="panel-body">
+    	<p class="registration-sign-in">Already have an OLP account? <a>Sign in</a></p>
+    	<form>
+  		  <h3 class="registration-header">Create Account</h3>
+  		  <div class="form-group">
+  		    <label class="label-registration">Nama Lengkap</label>
+  		    <input type="text" class="form-control form-register-fullwidth">
+  		     <label class="label-registration">Nama Lengkap Sesuai Identitas</label>
+  		    <input type="text" class="form-control form-register-fullwidth" >
+          <p class="registration-info"><small>Akan dicantumkan pada sertifikat yang akan kamu dapatkan</small></p>
+  		     <label class="label-registration">Username</label>
+  		    <input type="text" class="form-control form-register-fullwidth" >
+          <p class="registration-info"><small>Nama yang akan menjadi identitas kamu ketika mengikuti course</small></p>
+  		     <label class="label-registration ">Email</label>
+  		    <input type="text" class="form-control form-register-fullwidth" >
+          <p class="registration-info"><small>Email ini akan digunakan ketika login</small></p>
+  		     <label class="label-registration">Password</label>
+  		    <input type="text" class="form-control form-register-fullwidth" >
+            
+          <div class="row">
+            <div class="col-md-6">
+      		    
+              <label class="label-registration label-registration-small">Jenis Kelamin</label>
+      		    <select name="Sex" id="Sex" class="form-control form-register-halfwidth" placeholder="Jenis Kelamin" style="display:block;">
+                <option selected="selected" value=""></option>
+                <option value="P">Pria</option>
+                <option value="W">Wanita</option>
+
+              </select>
+      		   
+      		    <label class="label-registration label-registration-small">Tempat Lahir</label>
+        		     <select name="CityOfBirth" id="CityOfBirth" class="form-control form-register-halfwidth" placeholder="Tempat Lahir" style="display:block;">
+                    <option selected="selected" value=""></option>
+                    <option value="3174">Jakarta Barat (kota)</option>
+                    <option value="3173">Jakarta Pusat (kota)</option>
+                    <option value="3171">Jakarta Selatan (kota)</option>
+                    <option value="3172">Jakarta Timur (kota)</option>
+                    <option value="3175">Jakarta Utara (kota)</option>
+                    <option value="3101">Adm. Kepulauan Seribu (kab.)</option>
+                    <option value="1107">Aceh Barat (kab.)</option>
+                    <option value="1112">Aceh Barat Daya (kab.)</option>
+                    <option value="1108">Aceh Besar (kab.)</option>
+                    <option value="1113">Aceh Gayo Lues (kab.)</option>
+                    <option value="1116">Aceh Jaya (kab.)</option>
+                    <option value="1103">Aceh Selatan (kab.)</option>
+                    <option value="1102">Aceh Singkil (kab.)</option>
+                    <option value="1114">Aceh Tamiang (kab.)</option>
+                    <option value="1106">Aceh Tengah (kab.)</option>
+                    <option value="1104">Aceh Tenggara (kab.)</option>
+                    <option value="1105">Aceh Timur (kab.)</option>
+                    <option value="1111">Aceh Utara (kab.)</option>
+                    <option value="1307">Agam (kab.)</option>
+                    <option value="5307">Alor (kab.)</option>
+                    <option value="8171">Ambon (kota)</option>
+                    <option value="1208">Asahan (kab.)</option>
+                    <option value="9415">Asmat (kab.)</option>
+                    <option value="5103">Badung (kab.)</option>
+                    <option value="6311">Balangan (kab.)</option>
+                    <option value="6471">Balikpapan (kota)</option>
+                    <option value="1171">Banda Aceh (kota)</option>
+                    <option value="1871">Bandar Lampung (kota)</option>
+                    <option value="3204">Bandung (kab.)</option>
+                    <option value="3273">Bandung (kota)</option>
+                    <option value="3217">Bandung Barat (kab.)</option>
+                    <option value="7202">Banggai (kab.)</option>
+                    <option value="7201">Banggai Kepulauan (kab.)</option>
+                    <option value="1901">Bangka (kab.)</option>
+                    <option value="1905">Bangka Barat (kab.)</option>
+                    <option value="1903">Bangka Selatan (kab.)</option>
+                    <option value="1904">Bangka Tengah (kab.)</option>
+                    <option value="3526">Bangkalan (kab.)</option>
+                    <option value="5106">Bangli (kab.)</option>
+                    <option value="6303">Banjar (kab.)</option>
+                    <option value="3279">Banjar (kota)</option>
+                    <option value="6372">Banjar Baru (kota)</option>
+                    <option value="6371">Banjarmasin (kota)</option>
+                    <option value="3304">Banjarnegara (kab.)</option>
+                    <option value="7303">Bantaeng (kab.)</option>
+                    <option value="3402">Bantul (kab.)</option>
+                    <option value="1607">Banyuasin (kab.)</option>
+                    <option value="3302">Banyumas (kab.)</option>
+                    <option value="3510">Banyuwangi (kab.)</option>
+                    <option value="6304">Barito Kuala (kab.)</option>
+                    <option value="6204">Barito Selatan (kab.)</option>
+                    <option value="6212">Barito Timur (kab.)</option>
+                    <option value="6205">Barito Utara (kab.)</option>
+                    <option value="7310">Barru (kab.)</option>
+                    <option value="6302">Baru (kota)</option>
+                    <option value="2071">Batam (kota)</option>
+                    <option value="3325">Batang (kab.)</option>
+                    <option value="1504">Batang Hari (kab.)</option>
+                    <option value="3579">Batu (kota)</option>
+                    <option value="1217">Batubara (kab.)</option>
+                    <option value="7472">Bau Bau (kota)</option>
+                    <option value="3216">Bekasi (kab.)</option>
+                    <option value="3275">Bekasi (kota)</option>
+                    <option value="1902">Belitung (kab.)</option>
+                    <option value="1906">Belitung Timur (kab.)</option>
+                    <option value="5306">Belu (kab.)</option>
+                    <option value="1117">Bener Meriah (kab.)</option>
+                    <option value="1408">Bengkalis (kab.)</option>
+                    <option value="6102">Bengkayang (kab.)</option>
+                    <option value="1771">bengkulu (kota)</option>
+                    <option value="1702">Bengkulu Lebong (kab.)</option>
+                    <option value="1701">Bengkulu Selatan (kab.)</option>
+                    <option value="1709">Bengkulu Tengah (kab.)</option>
+                    <option value="1703">Bengkulu Utara (kab.)</option>
+                    <option value="6405">Berau (kab.)</option>
+                    <option value="9409">Biak Numfor (kab.)</option>
+                    <option value="5206">Bima (kab.)</option>
+                    <option value="5272">Bima (kota)</option>
+                    <option value="1276">Binjai (kota)</option>
+                    <option value="2002">Bintan ( Kepulauan Riau) (kab.)</option>
+                    <option value="1110">Bireuen (kab.)</option>
+                    <option value="7172">Bitung (kota)</option>
+                    <option value="3505">Blitar (kab.)</option>
+                    <option value="3572">Blitar (kota)</option>
+                    <option value="3316">Blora (kab.)</option>
+                    <option value="7501">Boalemo (kab.)</option>
+                    <option value="3201">Bogor (kab.)</option>
+                    <option value="3271">Bogor (kota)</option>
+                    <option value="3522">Bojonegoro (kab.)</option>
+                    <option value="7101">Bolaang Mangondow (kab.)</option>
+                    <option value="7106">Bolaang Mongondow Utara (kab.)</option>
+                    <option value="7111">Bolang Mongondow Barat (kab.)</option>
+                    <option value="7110">Bolang Mongondow Timur (kab.)</option>
+                    <option value="3511">Bondowoso (kab.)</option>
+                    <option value="7311">Bone (kab.)</option>
+                    <option value="7504">Bone Bolango (kab.)</option>
+                    <option value="6474">Bontang (kota)</option>
+                    <option value="9413">Boven Digoel (kab.)</option>
+                    <option value="3309">Boyolali (kab.)</option>
+                    <option value="3329">Brebes (kab.)</option>
+                    <option value="1375">Bukittinggi (kota)</option>
+                    <option value="5108">Buleleng (kab.)</option>
+                    <option value="6502">Bulongan (kab.)</option>
+                    <option value="6407">Bulongan (kab.)</option>
+                    <option value="7302">Bulukumba (kab.)</option>
+                    <option value="1509">Bungo (kab.)</option>
+                    <option value="7207">Buol (kab.)</option>
+                    <option value="8104">Buru (kab.)</option>
+                    <option value="8108">Buru Selatan (kab.)</option>
+                    <option value="7401">Buton (kab.)</option>
+                    <option value="7410">Buton Utara (kab.)</option>
+                    <option value="3207">Ciamis (kab.)</option>
+                    <option value="3203">Cianjur (kab.)</option>
+                    <option value="3301">Cilacap (kab.)</option>
+                    <option value="3672">Cilegon (kota)</option>
+                    <option value="3277">Cimahi (kota)</option>
+                    <option value="3209">Cirebon (kab.)</option>
+                    <option value="3274">Cirebon (kota)</option>
+                    <option value="1210">Dairi (kab.)</option>
+                    <option value="1212">Deli Serdang (kab.)</option>
+                    <option value="3321">Demak (kab.)</option>
+                    <option value="5171">Denpasar (kota)</option>
+                    <option value="3276">Depok (kota)</option>
+                    <option value="1311">Dharmasraya (kab.)</option>
+                    <option value="5205">Dompu (kab.)</option>
+                    <option value="7205">Donggala (kab.)</option>
+                    <option value="1473">Dumai (kota)</option>
+                    <option value="1608">Empatlawang (kab.)</option>
+                    <option value="5311">Ende (kab.)</option>
+                    <option value="7316">Enrekang (kab.)</option>
+                    <option value="9501">Fak-Fak (kab.)</option>
+                    <option value="5309">Flores Timur (kab.)</option>
+                    <option value="3205">Garut (kab.)</option>
+                    <option value="5104">Gianyar (kab.)</option>
+                    <option value="7502">Gorontalo (kab.)</option>
+                    <option value="7571">Gorontalo (kota)</option>
+                    <option value="7505">Gorontalo Utara (kab.)</option>
+                    <option value="7306">Gowa (kab.)</option>
+                    <option value="3525">Gresik (kab.)</option>
+                    <option value="3315">Grobogan (kab.)</option>
+                    <option value="3403">Gunung Kidul (kab.)</option>
+                    <option value="6211">Gunung Mas (kab.)</option>
+                    <option value="8201">Halmahera Barat (kab.)</option>
+                    <option value="8204">Halmahera Selatan (kab.)</option>
+                    <option value="8202">Halmahera Tengah (kab.)</option>
+                    <option value="8206">Halmahera Timur (kab.)</option>
+                    <option value="8205">Halmahera Utara (kab.)</option>
+                    <option value="6306">Hulu Sungai Selatan (kab.)</option>
+                    <option value="6307">Hulu Sungai Tengah (kab.)</option>
+                    <option value="6308">Hulu Sungai Utara (kab.)</option>
+                    <option value="1215">Humbang Hasundutan (kab.)</option>
+                    <option value="1403">Indragiri Hilir (kab.)</option>
+                    <option value="1402">Indragiri Hulu (kab.)</option>
+                    <option value="3212">Indramayu (kab.)</option>
+                    <option value="1571">Jambi (kota)</option>
+                    <option value="9403">Jayapura (kab.)</option>
+                    <option value="9471">Jayapura (kota)</option>
+                    <option value="9402">Jayawijaya (kab.)</option>
+                    <option value="3509">Jember (kab.)</option>
+                    <option value="5101">Jembrana (kab.)</option>
+                    <option value="7304">Jeneponto (kab.)</option>
+                    <option value="3320">Jepara (kab.)</option>
+                    <option value="3517">Jombang (kab.)</option>
+                    <option value="9502">Kaimana (kab.)</option>
+                    <option value="1406">Kampar (kab.)</option>
+                    <option value="6203">Kapuas (kab.)</option>
+                    <option value="6108">Kapuas Hulu (kab.)</option>
+                    <option value="5107">Karang Asem (kab.)</option>
+                    <option value="3313">Karanganyar (kab.)</option>
+                    <option value="3215">Karawang (kab.)</option>
+                    <option value="2001">Karimun (kab.)</option>
+                    <option value="1211">Karo (kab.)</option>
+                    <option value="6209">Katingan (kab.)</option>
+                    <option value="1704">Kaur (kab.)</option>
+                    <option value="6109">Kayong  Utara (kab.)</option>
+                    <option value="3305">Kebumen (kab.)</option>
+                    <option value="3506">Kediri (kab.)</option>
+                    <option value="3571">Kediri (kota)</option>
+                    <option value="9420">Keerom (kab.)</option>
+                    <option value="3324">Kendal (kab.)</option>
+                    <option value="7403">Kendari (kab.)</option>
+                    <option value="7471">Kendari (kota)</option>
+                    <option value="2005">Kep. Anambas (kab.)</option>
+                    <option value="1707">Kepahiang (kab.)</option>
+                    <option value="8105">Kepulauan Aru (kab.)</option>
+                    <option value="1301">Kepulauan Mentawai (kab.)</option>
+                    <option value="7109">Kepulauan Sitaro (kab.)</option>
+                    <option value="8203">Kepulauan Sula (kab.)</option>
+                    <option value="7104">Kepulauan Talaud (kab.)</option>
+                    <option value="1501">Kerinci (kab.)</option>
+                    <option value="6106">Ketapang (kab.)</option>
+                    <option value="3310">Klaten (kab.)</option>
+                    <option value="5105">Klungkung (kab.)</option>
+                    <option value="7404">Kolaka (kab.)</option>
+                    <option value="7405">Konawe Selatan (kab.)</option>
+                    <option value="1373">Kota Sawah (kota)</option>
+                    <option value="6201">Kota Waringin Barat (kab.)</option>
+                    <option value="6202">Kota Waringin Timur (kab.)</option>
+                    <option value="7174">Kotamobagu (kota)</option>
+                    <option value="1401">Kuantan Singingi (kab.)</option>
+                    <option value="6110">Kubu Raya (kab.)</option>
+                    <option value="3319">Kudus (kab.)</option>
+                    <option value="3401">Kulon Progo (kab.)</option>
+                    <option value="3208">Kuningan (kab.)</option>
+                    <option value="5303">Kupang (kab.)</option>
+                    <option value="5371">Kupang (kota)</option>
+                    <option value="6403">Kutai (kab.)</option>
+                    <option value="6402">Kutai Barat (kab.)</option>
+                    <option value="6404">Kutai Timur (kab.)</option>
+                    <option value="1207">Labuhan Batu (kab.)</option>
+                    <option value="1223">Labuhanbatu Selatan (kab.)</option>
+                    <option value="1222">Labuhanbatu Utara (kab.)</option>
+                    <option value="1604">Lahat (kab.)</option>
+                    <option value="6207">Lamandau (kab.)</option>
+                    <option value="3524">Lamongan (kab.)</option>
+                    <option value="1801">Lampung Barat (kab.)</option>
+                    <option value="1803">Lampung Selatan (kab.)</option>
+                    <option value="1805">Lampung Tengah (kab.)</option>
+                    <option value="1804">Lampung Timur (kab.)</option>
+                    <option value="1806">Lampung Utara (kab.)</option>
+                    <option value="6103">Landak (kab.)</option>
+                    <option value="1213">Langkat (kab.)</option>
+                    <option value="1173">Langsa (kota)</option>
+                    <option value="3602">Lebak (kab.)</option>
+                    <option value="5308">Lembata (kab.)</option>
+                    <option value="1174">Lhokseumawe (kota)</option>
+                    <option value="1308">Lima Puluh (kab.)</option>
+                    <option value="2004">Lingga (kab.)</option>
+                    <option value="5201">Lombok Barat (kab.)</option>
+                    <option value="5202">Lombok Tengah (kab.)</option>
+                    <option value="5203">Lombok Timur (kab.)</option>
+                    <option value="5208">Lombok Utara (kab.)</option>
+                    <option value="1674">Lubuk Linggau (kota)</option>
+                    <option value="3508">Lumajang (kab.)</option>
+                    <option value="7317">Luwu (kab.)</option>
+                    <option value="7325">Luwu Timur (kab.)</option>
+                    <option value="7319">Luwu Utara (kab.)</option>
+                    <option value="3519">Madiun (kab.)</option>
+                    <option value="3577">Madiun (kota)</option>
+                    <option value="3308">Magelang (kab.)</option>
+                    <option value="3371">Magelang (kota)</option>
+                    <option value="3520">Magetan (kab.)</option>
+                    <option value="3210">Majalengka (kab.)</option>
+                    <option value="7602">Majene (kab.)</option>
+                    <option value="7371">Makassar (kota)</option>
+                    <option value="3507">Malang (kab.)</option>
+                    <option value="3573">Malang (kota)</option>
+                    <option value="6111">Malawi (kab.)</option>
+                    <option value="6503">Malinau (kab.)</option>
+                    <option value="6406">Malinau (kab.)</option>
+                    <option value="8109">Maluku Barat Daya (kab.)</option>
+                    <option value="8103">Maluku Tengah (kab.)</option>
+                    <option value="8101">Maluku Tenggara (kab.)</option>
+                    <option value="8102">Maluku Tenggara Barat (kab.)</option>
+                    <option value="7604">Mamasa (kab.)</option>
+                    <option value="7603">Mamuju (kab.)</option>
+                    <option value="7605">Mamuju Utara (kab.)</option>
+                    <option value="7171">Manado (kota)</option>
+                    <option value="1202">Mandailing Natal (kab.)</option>
+                    <option value="5313">Manggarai (kab.)</option>
+                    <option value="5315">Manggarai Barat (kab.)</option>
+                    <option value="5319">Manggarai Timur (kab.)</option>
+                    <option value="9508">Manokwari (kab.)</option>
+                    <option value="9414">Mappi (kab.)</option>
+                    <option value="7308">Maros (kab.)</option>
+                    <option value="5271">Mataram (kota)</option>
+                    <option value="1275">Medan (kota)</option>
+                    <option value="1502">Merangin (kab.)</option>
+                    <option value="9401">Merauke (kab.)</option>
+                    <option value="1872">Metro (kota)</option>
+                    <option value="9412">Mimika (kab.)</option>
+                    <option value="7102">Minahasa (kab.)</option>
+                    <option value="7105">Minahasa Selatan (kab.)</option>
+                    <option value="7108">Minahasa Utara (kab.)</option>
+                    <option value="7107">Mitra (kab.)</option>
+                    <option value="3516">Mojokerto (kab.)</option>
+                    <option value="3576">Mojokerto (kota)</option>
+                    <option value="7203">Morowali (kab.)</option>
+                    <option value="1603">Muara Enim (kab.)</option>
+                    <option value="1505">Muaro Jambi (kab.)</option>
+                    <option value="1706">Mukomuko (kab.)</option>
+                    <option value="7402">Muna (kab.)</option>
+                    <option value="6213">Murung Jaya (kab.)</option>
+                    <option value="1606">Musi Banyu (kab.)</option>
+                    <option value="1605">Musi Rawas (kab.)</option>
+                    <option value="9404">Nabire (kab.)</option>
+                    <option value="1115">Nagan Raya (kab.)</option>
+                    <option value="5316">Nagekeo (kab.)</option>
+                    <option value="2003">Natuna (kab.)</option>
+                    <option value="5312">Ngada (kab.)</option>
+                    <option value="3518">Nganjuk (kab.)</option>
+                    <option value="3521">Ngawi (kab.)</option>
+                    <option value="1201">Nias (kab.)</option>
+                    <option value="1214">Nias Selatan (kab.)</option>
+                    <option value="6408">Nunukan (kab.)</option>
+                    <option value="6501">Nunukan (kab.)</option>
+                    <option value="1609">Ogan Ilir (kab.)</option>
+                    <option value="1602">Ogan Komering Ilir (kab.)</option>
+                    <option value="1601">Ogan Komering Ulu (kab.)</option>
+                    <option value="1610">Ogan Komering Ulu Selatan (kab.)</option>
+                    <option value="1611">Ogan Komering Ulu Timur (kab.)</option>
+                    <option value="3501">Pacitan (kab.)</option>
+                    <option value="1371">Padang (kota)</option>
+                    <option value="1221">Padang Lawas (kab.)</option>
+                    <option value="1220">Padang Lawas Utara (kab.)</option>
+                    <option value="1374">Padang Panjang (kota)</option>
+                    <option value="1306">Padang Pariaman (kab.)</option>
+                    <option value="1277">Padang Sidempuan (kota)</option>
+                    <option value="1673">Pagar Alam (kota)</option>
+                    <option value="1216">Pakpak Bharat (kab.)</option>
+                    <option value="6271">Palangka Raya (kota)</option>
+                    <option value="1671">Palembang (kota)</option>
+                    <option value="7373">Palopo (kota)</option>
+                    <option value="7271">Palu (kota)</option>
+                    <option value="3601">Pandeglang (kab.)</option>
+                    <option value="7309">Pangkajene Kepulauan (kab.)</option>
+                    <option value="1971">Pangkal Pinang (kota)</option>
+                    <option value="7321">Pangkep (kab.)</option>
+                    <option value="9410">Paniai (kab.)</option>
+                    <option value="7372">Pare-Pare (kota)</option>
+                    <option value="1377">Pariaman (kota)</option>
+                    <option value="7208">Parigi Moutong (kab.)</option>
+                    <option value="1309">Pasaman (kab.)</option>
+                    <option value="1310">Pasaman Barat (kab.)</option>
+                    <option value="6401">Pasir (kab.)</option>
+                    <option value="3514">Pasuruan (kab.)</option>
+                    <option value="3575">Pasuruan (kota)</option>
+                    <option value="3318">Pati (kab.)</option>
+                    <option value="1376">Payakumbuh (kota)</option>
+                    <option value="9417">Pegunungan Bintang (kab.)</option>
+                    <option value="3326">Pekalongan (kab.)</option>
+                    <option value="3375">Pekalongan (kota)</option>
+                    <option value="1471">PekanBaru (kota)</option>
+                    <option value="1404">Pelalawan (kab.)</option>
+                    <option value="3327">Pemalang (kab.)</option>
+                    <option value="1273">Pematang Siantar (kota)</option>
+                    <option value="3528">Pemekasan (kab.)</option>
+                    <option value="6409">Penajam Paser (kab.)</option>
+                    <option value="1809">Pesawaran (kab.)</option>
+                    <option value="1302">Pesisir Selatan (kab.)</option>
+                    <option value="1109">Pidie (kab.)</option>
+                    <option value="1118">Pidie Jaya (kab.)</option>
+                    <option value="7315">Pinrang (kab.)</option>
+                    <option value="7503">Pohuwato (kab.)</option>
+                    <option value="7601">Polewali Mamasa (kab.)</option>
+                    <option value="3502">Ponogoro (kab.)</option>
+                    <option value="6104">Pontianak (kab.)</option>
+                    <option value="6171">Pontianak (kota)</option>
+                    <option value="7204">Poso (kab.)</option>
+                    <option value="1672">Prabumulik (kota)</option>
+                    <option value="3513">Probolinggo (kab.)</option>
+                    <option value="3574">Probolinggo (kota)</option>
+                    <option value="6210">Pulang Pisau (kab.)</option>
+                    <option value="9411">Puncak Jaya (kab.)</option>
+                    <option value="3303">Purbalingga (kab.)</option>
+                    <option value="3214">Purwakarta (kab.)</option>
+                    <option value="3306">Purworejo (kab.)</option>
+                    <option value="9504">Raja Ampat (kab.)</option>
+                    <option value="1708">Rejanglebong (kab.)</option>
+                    <option value="3317">Rembang (kab.)</option>
+                    <option value="1409">Rokan Hilir (kab.)</option>
+                    <option value="1407">Rokan Hulu (kab.)</option>
+                    <option value="5314">Rote Ndao (kab.)</option>
+                    <option value="1172">Sabang (kota)</option>
+                    <option value="3373">Salatiga (kota)</option>
+                    <option value="6472">Samarinda (kota)</option>
+                    <option value="6101">Sambas (kab.)</option>
+                    <option value="1218">Samosir (kab.)</option>
+                    <option value="3527">Sampang (kab.)</option>
+                    <option value="6105">Sanggau (kab.)</option>
+                    <option value="7103">Sangihe Talaud (kab.)</option>
+                    <option value="9419">Sarmi (kab.)</option>
+                    <option value="1503">Sarolangun (kab.)</option>
+                    <option value="1304">Sawahlunto/Sijunjung (kab.)</option>
+                    <option value="6112">Sekadau (kab.)</option>
+                    <option value="7301">Selayar (kab.)</option>
+                    <option value="1705">Seluma (kab.)</option>
+                    <option value="3322">Semarang (kab.)</option>
+                    <option value="3374">Semarang (kota)</option>
+                    <option value="8106">Seram Bagian Barat (kab.)</option>
+                    <option value="8107">Seram Bagian Timur (kab.)</option>
+                    <option value="3604">Serang (kab.)</option>
+                    <option value="3673">Serang (kota)</option>
+                    <option value="1219">Serdang Bedagai (kab.)</option>
+                    <option value="6208">Seruyan (kab.)</option>
+                    <option value="1405">Siak (kab.)</option>
+                    <option value="1271">Sibolga (kota)</option>
+                    <option value="7314">Sidenreng Rappang (kab.)</option>
+                    <option value="3515">Sidoarjo (kab.)</option>
+                    <option value="5310">Sikka (kab.)</option>
+                    <option value="1209">Simalungun (kab.)</option>
+                    <option value="1101">Simeulue (kab.)</option>
+                    <option value="6172">Singkawang (kota)</option>
+                    <option value="7307">Sinjai (kab.)</option>
+                    <option value="6107">Sintang (kab.)</option>
+                    <option value="3512">Situbondo (kab.)</option>
+                    <option value="3404">Sleman (kab.)</option>
+                    <option value="1303">Solok (kab.)</option>
+                    <option value="1372">Solok (kota)</option>
+                    <option value="1312">Solok Selatan (kab.)</option>
+                    <option value="7312">Soppeng (kab.)</option>
+                    <option value="9507">Sorong (kab.)</option>
+                    <option value="9571">Sorong (kota)</option>
+                    <option value="9503">Sorong Selatan (kab.)</option>
+                    <option value="3314">Sragen (kab.)</option>
+                    <option value="3213">Subang (kab.)</option>
+                    <option value="1175">Subulussalam (kota)</option>
+                    <option value="3202">Sukabumi (kab.)</option>
+                    <option value="3272">Sukabumi (kota)</option>
+                    <option value="6206">Sukamara (kab.)</option>
+                    <option value="3311">Sukoharjo (kab.)</option>
+                    <option value="5317">Sumba Barat Daya (kab.)</option>
+                    <option value="5318">Sumba Tengah (kab.)</option>
+                    <option value="5302">Sumba Timur (kab.)</option>
+                    <option value="5204">Sumbawa (kab.)</option>
+                    <option value="5207">Sumbawa Barat (kab.)</option>
+                    <option value="3211">Sumedang (kab.)</option>
+                    <option value="3529">Sumenep (kab.)</option>
+                    <option value="1572">Sungai Penuh (kota)</option>
+                    <option value="3578">Surabaya (kota)</option>
+                    <option value="3372">Surakarta (kota)</option>
+                    <option value="5102">Tabanan (kab.)</option>
+                    <option value="7305">Takalar (kab.)</option>
+                    <option value="7318">Tana Toraja (kab.)</option>
+                    <option value="6310">Tanah Bumbu (kab.)</option>
+                    <option value="1305">Tanah Datar (kab.)</option>
+                    <option value="6301">Tanah Laut (kab.)</option>
+                    <option value="6504">Tanah Tidung (kab.)</option>
+                    <option value="6410">Tanah Tidung (kab.)</option>
+                    <option value="6309">Tanbalong (kab.)</option>
+                    <option value="3603">Tangerang (kab.)</option>
+                    <option value="3671">Tangerang (kota)</option>
+                    <option value="3674">Tangerang Selatan (kota)</option>
+                    <option value="1802">Tanggamus (kab.)</option>
+                    <option value="1272">Tanjung Balai (kota)</option>
+                    <option value="1507">Tanjung Jabung (kab.)</option>
+                    <option value="1506">Tanjung Jabung Barat (kab.)</option>
+                    <option value="2072">Tanjung Pinang (kota)</option>
+                    <option value="1203">Tapanuli Selatan (kab.)</option>
+                    <option value="1204">Tapanuli Tengah (kab.)</option>
+                    <option value="1205">Tapanuli Utara (kab.)</option>
+                    <option value="6305">Tapin (kab.)</option>
+                    <option value="6473">Tarakan (kota)</option>
+                    <option value="6505">Tarakan (kota)</option>
+                    <option value="6571">Tarakan (kota)</option>
+                    <option value="3206">Tasikmalaya (kab.)</option>
+                    <option value="3278">Tasikmalaya (kota)</option>
+                    <option value="1274">Tebing Tinggi (kota)</option>
+                    <option value="1508">Tebo (kab.)</option>
+                    <option value="3328">Tegal (kab.)</option>
+                    <option value="3376">Tegal (kota)</option>
+                    <option value="9505">Teluk Bintuni (kab.)</option>
+                    <option value="9506">Teluk Wondama (kab.)</option>
+                    <option value="3323">Temanggung (kab.)</option>
+                    <option value="8271">Ternate (kota)</option>
+                    <option value="8272">Tidore Kepulauan (kota)</option>
+                    <option value="5305">Timor Tengah Selatan (kab.)</option>
+                    <option value="5304">Timor Tengah Utara (kab.)</option>
+                    <option value="1206">Toba Samosir (kab.)</option>
+                    <option value="7206">Toli Toli (kab.)</option>
+                    <option value="9418">Tolikara (kab.)</option>
+                    <option value="7173">Tomohon (kota)</option>
+                    <option value="7322">Toraja  Utara (kab.)</option>
+                    <option value="3503">Trenggalek (kab.)</option>
+                    <option value="3523">Tuban (kab.)</option>
+                    <option value="1808">Tulang Bawang (kab.)</option>
+                    <option value="3504">Tulungagung (kab.)</option>
+                    <option value="5301">umba Barat (kab.)</option>
+                    <option value="7313">Wajo (kab.)</option>
+                    <option value="7409">Wakatobi (kab.)</option>
+                    <option value="9426">Waropen (kab.)</option>
+                    <option value="1807">Way Kanan (kab.)</option>
+                    <option value="3312">Wonogiri (kab.)</option>
+                    <option value="3307">Wonosobo (kab.)</option>
+                    <option value="9416">Yahukimo (kab.)</option>
+                    <option value="9408">Yapen Waropen (kab.)</option>
+                    <option value="3471">Yogyakarta (kota)</option>
+
+                  </select>
+      		    
+      		    <label class="label-registration label-registration-small">Nomor Handphone</label>
+              <input type="text" class="form-control form-register-halfwidth" >
+              </div>
+              <div class="col-md-6">
+              <label class="label-registration label-registration-small">Agama</label>
+              <select name="Religion" id="Religion" class="form-control form-register-halfwidth" placeholder="Agama" style="display:block;">
+                <option selected="selected" value=""></option>
+                <option value="01">Islam</option>
+                <option value="02">Katolik</option>
+                <option value="03">Protestan</option>
+                <option value="04">Budha</option>
+                <option value="05">Hindu</option>
+                <option value="06">Kong Hu Chu</option>
+              </select>
+              <label class="label-registration label-registration-small">Tanggal Lahir</label>
+              <input type="text" class="form-control form-register-halfwidth">
+      		    
+      		    <label class="label-registration label-registration-small">Nomor Telepon Rumah</label>
+      		    <input type="text" class="form-control form-register-halfwidth">
+  		   
+            </div>
+          </div>
+           <label class="label-registration">Dalam hal ini nasabah bertindak sebagai</label>
+
+           
+         <div class="radio-registration">
+          <label class="radio-inline">
+              <input type="radio" name="optradio">Diri Sendiri
+            </label>
+          <label class="radio-inline">
+            <input type="radio" name="optradio">Pihak Lain
+          </label>
+        </div>
+     
+  		    <label class="label-registration">Dari Mana Mengenal Kami</label>
+  		    <input type="text" class="form-control form-register-fullwidth" >
+  		  </div>
+        <div class="container-segment container-segment--registration" align="center">
+          
+            <div class="btn btn-lg btn--blue btn-registration">Create Account</div>
+          
+        </div>
+		</form>
+
+</div>
+
+    </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+<footer class="footer">
+	<div class="footer-bg"></div>
+    <div class="container">
+        <div class="row">
+        	<div class="col-md-9">
+        		<div class="footer-left">
+
+        		<span class="footer-left__content--left">
+        			Copyright © 2017 PT Mandiri Sekuritas All Rights Reserved
+        		</span>
+        		
+        			<span class="footer-left__content--right">
+							<a href="#DisclaimerModal" data-toggle="modal">Disclaimer</a> |
+							<a href="http://www.mandirisekuritas.co.id" target="_blank" rel="nofollow">Corporate Website</a> |
+							<a href="#contact-modal" data-toggle="modal">Contact Us</a>
+						</span>
+        		</div>
+        	</div>
+        	<div class="col-md-3">
+        		<div class="footer-right">
+        			trusted partner to prosper
+        		</div>
+        	</div>
+        </div>
+    </div>
+</footer>
+	
+	<script src="https://use.fontawesome.com/07b5fbe377.js"></script>
+	<script src="assets/js/jquery-1.10.2.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/main.js"></script>
+  <script>$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});</script>
+
+</body>
+</html>
+
+

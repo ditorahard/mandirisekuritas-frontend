@@ -36,6 +36,10 @@
     margin-right:10px;
 }
 
+.btn-registration{
+    align-self:middle;
+}
+
 
 /*Navbar*/
 
@@ -78,7 +82,7 @@
    
 }
 
-
+//Tambahan
 label.btn span {
   font-size: 1.5em ;
 }
@@ -160,3 +164,30 @@ box-shadow: none;
 
 
 
+#btn-login {
+    width: 261px;
+    background: url(../img/btn-login-bg.png) repeat scroll 0% 0% transparent;
+    color: #FDC92A;
+    border: none;
+    padding: 8px 5px;
+    font-weight: bold;
+    font-size: 15px;
+    height: 42px;
+    margin-left: -5px;
+    margin-top: -5px;
+    background-size: 100%;
+}
+
+#btn-register {
+    width: 261px;
+    background: url(../img/btn-login-bg.png) repeat scroll 0% 0% transparent;
+    color: #FDC92A;
+    border: none;
+    padding: 8px 5px;
+    font-weight: bold;
+    font-size: 15px;
+    height: 42px;
+    margin-left: -5px;
+    margin-top: -5px;
+    background-size: 100%;
+}
